@@ -2,8 +2,8 @@ const packageJson = require('../package.json');
 
 function requireFromEnv(key) {
     if (!process.env[key]) {
+        console.error("Could not find key " + key + ", end process");
         return process.exit(1)
-
     }
     return process.env[key]
 

@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "start": "node ./bin/www",
-    "start-dev-server": "nodemon src/bin/start-server.js --color"
+    "start-dev-server": "nodemon src/bin/start-server.js --color --logs"
   },
   "dependencies": {
     "cookie-parser": "~1.4.4",
