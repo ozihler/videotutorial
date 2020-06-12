@@ -5,7 +5,7 @@ const config = createConfig({env});
 const app = createExpressApp({config, env});
 
 function start() {
-    app.list(env.port, signalAppStart);
+    app.listen(env.port, signalAppStart);
 }
 
 function signalAppStart() {
