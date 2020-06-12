@@ -1,9 +1,9 @@
-const uuid = require('uuid/v4');
+const uuid = require('uuid');
 
 // sets up values we want on every request
 function primeRequestContext(req, res, next) {
     req.context = {
-        traceId: uuid()
+        traceId: uuid.v4()
     }
 
     next();

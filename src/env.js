@@ -1,4 +1,4 @@
-const packageJson = require('package.json');
+const packageJson = require('../package.json');
 
 function requireFromEnv(key) {
     if (!process.env[key]) {
@@ -12,6 +12,6 @@ function requireFromEnv(key) {
 module.exports = {
     appName: requireFromEnv('APP_NAME'),
     env: requireFromEnv('NODE_ENV'),
-    port: parseInt('PORT' |> requireFromEnv, 10),
+    port: parseInt(requireFromEnv('PORT'), 10),
     version: packageJson.version
 }
