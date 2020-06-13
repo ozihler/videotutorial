@@ -2,6 +2,7 @@ const packageJson = require('../package.json');
 process.env['APP_NAME'] = "myApp";
 process.env['PORT'] = "3210";
 process.env['NODE_ENV'] = "eobedefined";
+process.env['databaseUrl'] = 'http://localhost:5432';
 
 function requireFromEnv(key) {
     if (!process.env[key]) {
